@@ -72,9 +72,9 @@ select SoldAsVacant, case when SoldAsVacant ='Y' then 'Yes'
 from DataCleaningProject.dbo.HousingData
 
 update DataCleaningProject.dbo.HousingData set SoldAsVacant = case when SoldAsVacant = 'Y' then 'Yes'
-													               when SoldAsVacant ='N' then 'No'
-																   else SoldAsVacant
-																   end
+		                                                   when SoldAsVacant ='N' then 'No'
+								   else SoldAsVacant
+								   end
 
 
 --Q5 Remove Duplicates using CTE temp table
